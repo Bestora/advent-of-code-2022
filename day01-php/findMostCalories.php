@@ -14,3 +14,11 @@ $solution = max($elfes);
 echo "\n\n";
 echo "Solution for Part One: {$solution}";
 echo "\n\n";
+
+rsort($elfes);
+$solution = 0;
+for($i=0; $i<3; $i++) {
+    $solution+= $elfes[$i];
+}
+echo "Solution for Part Two: {$solution}";
+echo "\n\n";
