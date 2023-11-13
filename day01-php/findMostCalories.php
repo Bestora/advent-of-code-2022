@@ -8,4 +8,9 @@ foreach($elfes as &$elv) {
     $calories = explode("\n", $elv);
     $elv = array_sum($calories);
 }
-echo max($elfes);
+
+$solution = max($elfes);
+
+echo "\n\n";
+echo "Solution for Part One: {$solution}";
+echo "\n\n";
